@@ -51,6 +51,7 @@ export default function Filter() {
               error={formik?.errors?.start && true}
               type="date"
               name="start"
+              inputProps={{ 'aria-label': 'start' }}
               onChange={formik.handleChange}
               value={formik.values.start}
               helperText={formik?.errors?.start}
@@ -68,6 +69,7 @@ export default function Filter() {
               error={formik?.errors?.end && true}
               type="date"
               name="end"
+              inputProps={{ 'aria-label': "end" }}
               onChange={formik.handleChange}
               value={formik.values.end}
               helperText={formik?.errors?.end}
